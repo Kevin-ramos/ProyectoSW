@@ -10,7 +10,7 @@ export default function GeneratePDF({ person }) {
         doc.setFontSize(25)
         doc.setTextColor('#636363')
         doc.setFont('helvetica', 'normal')
-        doc.text("LOS CONSEJOS SON "+person, 185, 75, {
+        doc.text("Te recomendamos realizar lo siguiente: "+person, 185, 75, {
             align: 'center',
             maxWidth: 300
         })
@@ -24,7 +24,7 @@ export default function GeneratePDF({ person }) {
             },
         })
 
-        doc.save('listado_notarias.pdf');
+        doc.save('recomendacionesSGI.pdf');
     }
     return (
         <div>
