@@ -2,14 +2,9 @@ import Layout from "../../components/Layout";
 import GeneratePDF from "../../components/GenerarPdf";
 
 export default function () {
-    const descargarReporte = (e)=>{
-        e.preventDefault();
-        console.log("haza aplastado para generar el reporte");
-    }
-
     return (
-        <>
-            <GeneratePDF person="Hola" />
-        </>
+        <Layout>
+     <GeneratePDF person="hola"/>
+        </Layout>
     )
  }
