@@ -23,11 +23,12 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      <nav>
+      <nav style={{margin:"0px"}}>
           <Box sx={{ flexGrow: 1 }}>
-              <AppBar position="relative">
+              <AppBar position="static">
                   <Toolbar>
                       <Button color="inherit"><Link href={"/"} style={{ textDecoration: 'none', color: "white" }}>Home</Link></Button>
+                      <Button color="inherit"><Link href={"/seccion14/14.1.1"} style={{ textDecoration: 'none', color: "white" }} > 14.1.1  </Link></Button>
                       <Button color="inherit"><Link href={"/seccion14/14.1.2"} style={{ textDecoration: 'none', color: "white" }} > 14.1.2  </Link></Button>
                       <Button color="inherit"><Link href={"/seccion14/14.1.3"} style={{ textDecoration: 'none', color: "white" }}> 14.1.3 </Link></Button>
                       <Button color="inherit"><Link href={"/seccion14/14.2.1"} style={{ textDecoration: 'none', color: "white" }}> 14.2.1 </Link></Button>

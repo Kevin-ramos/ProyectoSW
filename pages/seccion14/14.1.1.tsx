@@ -9,7 +9,10 @@ export default function () {
 
     return (
         <>
-            <GeneratePDF person="Hola" />
+            <Layout>
+                <GeneratePDF person="Hola" />
+            </Layout>
+
         </>
     )
  }
