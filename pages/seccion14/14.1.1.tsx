@@ -3,8 +3,11 @@ import GeneratePDF from "../../components/GenerarPdf";
 
 export default function () {
     return (
-        <Layout>
-     <GeneratePDF person="hola"/>
-        </Layout>
+        <>
+            <Layout>
+                <GeneratePDF person="Hola" />
+            </Layout>
+
+        </>
     )
  }
