@@ -3,7 +3,9 @@ import Layout from "../../components/Layout";
 export default function () {
     return (
         <Layout>
-            FUE
+            <div style={{ backgroundColor: "black", verticalAlign:"middle", textAlign:"center", alignItems:"center", padding: "17%"}}>
+
+            </div>
         </Layout>
     )
 }

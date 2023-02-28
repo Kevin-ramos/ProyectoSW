@@ -5,7 +5,10 @@ export default function () {
     return (
         <>
             <Layout>
-                <GeneratePDF person="Hola" />
+                <div style={{ backgroundColor: "black", verticalAlign:"middle", textAlign:"center", alignItems:"center", padding: "17%"}}>
+                    <GeneratePDF person="Hola" />
+
+                </div>
             </Layout>
 
         </>

@@ -9,14 +9,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import styles from '../styles/global.module.css'
 type Props = {
   children?: ReactNode
   title?: string
 }
 
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
+  <div className={"styles"}>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -47,10 +47,13 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
       </nav>
     </header>
-    {children}
+
+      {children}
     <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
+        <hr style={{margin:"0px"}}/>
+      <div style={{margin: "0px", backgroundColor:"black", color:"white", textAlign:"center"}} >
+          <h2 style={{margin:"0px"}}> Desarrollo de Software Seguro : GRUPO 4</h2>
+      </div>
     </footer>
   </div>
 )
