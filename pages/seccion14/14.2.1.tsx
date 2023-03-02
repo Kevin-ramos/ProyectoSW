@@ -31,6 +31,8 @@ export default function () {
         mode: 'all'
     });
     const [preguntas, setPreguntas] = useState([]);
+    const titulo= "POLÍTICA DE DESARROLLO SEGURO"
+
     useEffect(()=>{
         setPreguntas([]);
     },[])
@@ -108,7 +110,7 @@ export default function () {
     }
 
     return (
-        <Layout title={"POLÍTICA DE DESARROLLO SEGURO"}>
+        <Layout title={titulo}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>POLÍTICA DE DESARROLLO SEGURO</h2>
                 <p> Se deben establecer reglas para que la seguridad de la información sea tenida en cuenta en todo el proceso de desarrollo del software y en todo el ciclo de vida del mismo. Estas reglas deben tener en cuenta aspectos como:
@@ -360,7 +362,7 @@ export default function () {
                             <Respuestas key={index} mensaje={pregunta}/>
 
                         )}
-                        <GeneratePDF recomendacion={preguntas} />
+                        <GeneratePDF recomendacion={preguntas}  string={titulo} />
                     </div>
 
                 </div>
