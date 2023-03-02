@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5242409-ca11-4e5b-aa79-f776aa8f441a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/seccion14/seguridad.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/GenerarPdf.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GenerarPdf.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/seccion14/14.1.1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/seccion14/14.1.1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/seccion14/14.2.1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/seccion14/14.2.1.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +30,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Jair/Desktop/EPN/8/SW SEGURO/Deberes/ProyectoIIBimestre/ProyectoSW/utils",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "C:\\Users\\Jair\\Desktop\\EPN\\8\\SW SEGURO\\Deberes\\ProyectoIIBimestre\\ProyectoSW\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jair\Desktop\EPN\8\SW SEGURO\Deberes\ProyectoIIBimestre\ProyectoSW\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jair\Desktop\EPN\8\SW SEGURO\Deberes\ProyectoIIBimestre\ProyectoSW\pages\seccion14" />
+      <recent name="C:\Users\Jair\Desktop\EPN\8\SW SEGURO\Deberes\ProyectoIIBimestre\ProyectoSW\components" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,6 +56,9 @@
       <workItem from="1677511004004" duration="1489000" />
       <workItem from="1677545695328" duration="22000" />
       <workItem from="1677603290112" duration="2229000" />
+      <workItem from="1677697910552" duration="95000" />
+      <workItem from="1677698020160" duration="1618000" />
+      <workItem from="1677721294838" duration="4051000" />
     </task>
     <servers />
   </component>
