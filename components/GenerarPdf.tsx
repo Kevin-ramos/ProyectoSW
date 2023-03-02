@@ -7,6 +7,9 @@ export default function GeneratePDF({ recomendacion: recomendaciones, string:nor
 
     function generate() {
         const doc = new jsPDF('l', 'pt', 'a4');
+        const logoPesnot = new Image();
+        logoPesnot.src = '/seguridad.png';
+        doc.addImage(logoPesnot, 'png', 700, 1, 100, 60)
         doc.setFontSize(20)
         doc.setTextColor('#636363')
         doc.setFont('helvetica', 'normal')
