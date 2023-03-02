@@ -3,6 +3,7 @@ import {Grid} from "@mui/material";
 import {useForm} from "react-hook-form";
 import {useEffect, useState} from "react";
 import Respuestas from "../../components/Respuestas";
+import GeneratePDF from "../../components/GenerarPdf";
 
 export interface Preguntas{
     primeraPregunta: string;
@@ -265,6 +266,7 @@ export default function () {
                             <Respuestas key={index} mensaje={pregunta}/>
 
                         )}
+                        <GeneratePDF recomendacion={preguntas} />
                     </div>
 
                 </div>

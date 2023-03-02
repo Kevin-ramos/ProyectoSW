@@ -3,32 +3,38 @@ import jsPDF from 'jspdf'
 import 'jspdf-autotable'
 import autoTable from "jspdf-autotable";
 
-export default function GeneratePDF({ person }) {
+export default function GeneratePDF({ recomendacion: recomendaciones }) {
 
     function generate() {
         const doc = new jsPDF('l', 'pt', 'a4');
-        doc.setFontSize(25)
+        doc.setFontSize(9)
         doc.setTextColor('#636363')
         doc.setFont('helvetica', 'normal')
-        doc.text("Te recomendamos realizar lo siguiente: "+person, 185, 75, {
+        doc.text('RECOMENDACIONES',450,30,{
             align: 'center',
-            maxWidth: 300
-        })
-        autoTable(doc, {
-            html: '#listado',
-            startY: 90,
-            styles: {
-                fontSize: 8,
-                cellWidth: 'auto',
-                overflow: 'linebreak'
-            },
-        })
-
+            maxWidth:800
+        });
+        doc.text(recomendaciones,10,50,{
+            align: 'justify',
+            maxWidth:800,
+            lineHeightFactor:2
+        });
+        //doc.
+        /*autoTable(doc,{
+            head: [['RECOMENDACIONES']],
+            body:
+                person.forEach(({elemento}) => {
+                    console.log(elemento)
+                    return [
+                        [elemento]
+                    ]
+                }),
+        })*/
         doc.save('recomendacionesSGI.pdf');
     }
     return (
         <div>
-            <button onClick={generate}>Download PDF</button>
+            <button onClick={generate}>Descargar Reporte</button>
         </div>
     )
 }
