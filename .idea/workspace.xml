@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5242409-ca11-4e5b-aa79-f776aa8f441a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/a.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/GenerarPdf.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GenerarPdf.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/seccion14/14.1.1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/seccion14/14.1.1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/seccion14/14.2.1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/seccion14/14.2.1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/seccion14/14.2.6.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/seccion14/14.2.6.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +21,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Jair/Desktop/EPN/8/SW SEGURO/Deberes/ProyectoIIBimestre/ProyectoSW/pages/seccion14",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Jair\\Desktop\\EPN\\8\\SW SEGURO\\Deberes\\ProyectoIIBimestre\\ProyectoSW\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jair/Desktop/EPN/8/SW SEGURO/Deberes/ProyectoIIBimestre/ProyectoSW/pages/seccion14&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Jair\\Desktop\\EPN\\8\\SW SEGURO\\Deberes\\ProyectoIIBimestre\\ProyectoSW\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jair\Desktop\EPN\8\SW SEGURO\Deberes\ProyectoIIBimestre\ProyectoSW\pages\seccion14" />
@@ -62,7 +56,7 @@
       <workItem from="1677603290112" duration="2229000" />
       <workItem from="1677697910552" duration="95000" />
       <workItem from="1677698020160" duration="1618000" />
-      <workItem from="1677721294838" duration="7996000" />
+      <workItem from="1677721294838" duration="8536000" />
     </task>
     <servers />
   </component>

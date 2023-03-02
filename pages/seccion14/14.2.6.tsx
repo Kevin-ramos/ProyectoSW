@@ -3,6 +3,7 @@ import {Grid} from "@mui/material";
 import {useForm} from "react-hook-form";
 import {useEffect, useState} from "react";
 import Respuestas from "../../components/Respuestas";
+import GeneratePDF from "../../components/GenerarPdf";
 
 export interface Preguntas{
     primeraPregunta: string;
@@ -24,6 +25,7 @@ export default function () {
         mode: 'all'
     });
     const [preguntas, setPreguntas] = useState([]);
+    const titulo="AMBIENTE DE DESARROLLO SEGURO"
     useEffect(()=>{
         setPreguntas([]);
     },[])
@@ -74,7 +76,7 @@ export default function () {
     }
 
     return (
-        <Layout title={"AMBIENTE DE DESARROLLO SEGURO"}>
+        <Layout title={titulo}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>AMBIENTE DE DESARROLLO SEGURO</h2>
                 <p>La evaluación de riesgos para la seguridad de la información no solo debe afectar a los activos de información como software, datos o equipos y soportes sino que también debe aplicarse a los entornos de desarrollo, las personas, los procesos de desarrollo y las tecnologías utiliza dadas para determinar si es necesario aplicar medidas o controles de seguridad</p>
@@ -269,6 +271,7 @@ export default function () {
                             <Respuestas key={index} mensaje={pregunta}/>
 
                         )}
+                        <GeneratePDF recomendacion={preguntas}  string={titulo} />
                     </div>
 
                 </div>
