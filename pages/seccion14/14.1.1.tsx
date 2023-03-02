@@ -21,6 +21,9 @@ export default function () {
 
                 <div style={{ backgroundColor: "white", textAlign:"center"}}>
                     <h2>ANÁLISIS Y ESPECIFICACIÓN DE LOS REQUISITOS DE SEGURIDAD</h2>
+                    <p>
+                        El objetivo de esta política es garantizar que los requisitos de seguridad para las aplicaciones y sistemas sean adecuadamente analizados y especificados, de manera que se asegure la protección de los activos involucrados y se cumpla con las normativas y estándares de seguridad establecidos </p>
+                   <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                     <div>
                         <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                             <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>

@@ -14,6 +14,8 @@ export default function () {
         <Layout title={"RESTRICCIONES A LOS CAMBIOS EN LOS PAQUETES DE SOFTWARE"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>RESTRICCIONES A LOS CAMBIOS EN LOS PAQUETES DE SOFTWARE</h2>
+                <p>Se deberían desalentar las modificaciones a los paquetes de software, limitándose a los cambios necesarios y todos los cambios se deberían controlar estrictamente </p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (

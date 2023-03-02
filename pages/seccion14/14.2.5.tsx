@@ -14,6 +14,8 @@ export default function () {
         <Layout title={"PRINCIPIOS DE LA INGENIERÍA DE SISTEMAS SEGUROS"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>PRINCIPIOS DE LA INGENIERÍA DE SISTEMAS SEGUROS</h2>
+                <p>Se deberían establecer, documentar, mantener y aplicar los principios para la ingeniería de sistemas seguros para cualquier labor de implementación del sistema de información.</p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (

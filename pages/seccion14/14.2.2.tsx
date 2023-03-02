@@ -15,6 +15,8 @@ export default function () {
         <Layout title={"PROCEDIMIENTO DE CONTROL DE CAMBIO DEL SISTEMA"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>PROCEDIMIENTO DE CONTROL DE CAMBIO DEL SISTEMA</h2>
+                <p>El objetivo de esta política es garantizar que todos los cambios realizados en los sistemas de información sean planificados, evaluados, autorizados, implementados y evaluados de manera segura y efectiva.</p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (

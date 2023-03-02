@@ -14,6 +14,8 @@ export default function () {
         <Layout title={"PRUEBAS DE ACEPTACIÓN DEL SISTEMA"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>PRUEBAS DE ACEPTACIÓN DEL SISTEMA</h2>
+                <p>El proceso de incorporación de nuevas aplicaciones actualizaciones o nuevas versiones de software debe estar sujeto a un proceso de aceptación donde se le realicen las pruebas funcionales y de seguridad planificadas con el fin de garantizar la calidad y fiabilidad.</p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (

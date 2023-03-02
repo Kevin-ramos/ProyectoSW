@@ -14,6 +14,8 @@ export default function () {
         <Layout title={"TRANSACCIONES EN LÍNEA"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>TRANSACCIONES EN LÍNEA</h2>
+                <p>Se trata de controles que permitan garantizar la seguridad y la integridad de las transacciones en línea, mediante el uso de controles de seguridad adecuados.</p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (

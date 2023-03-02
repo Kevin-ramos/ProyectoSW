@@ -15,6 +15,8 @@ export default function () {
         <Layout title={"REVISIÓN TÉCNICA DE APLICACIONES DESPUÉS DE CAMBIOS DE LAS PLATAFORMAS OPERATIVAS"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>REVISIÓN TÉCNICA DE APLICACIONES DESPUÉS DE CAMBIOS DE LAS PLATAFORMAS OPERATIVAS</h2>
+                <p>Cuando se cambian las plataformas operativas, las aplicaciones críticas para el negocio se deberían revisar y probar para asegurarse de que no se ha generado un impacto adverso en las operaciones o en la seguridad de la organización </p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (

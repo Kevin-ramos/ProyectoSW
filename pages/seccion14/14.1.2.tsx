@@ -15,6 +15,8 @@ export default function () {
         <Layout title={"ASEGURAMIENTO DE LOS SERVICIOS DE APLICACIÓN EN LAS REDES PÚBLICAS"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>ASEGURAMIENTO DE LOS SERVICIOS DE APLICACIÓN EN LAS REDES PÚBLICAS</h2>
+                <p>Garantizar la protección de los servicios de aplicación que se ejecutan en las redes públicas, asegurando la confidencialidad, integridad y disponibilidad de la información, y evitando el envío de información no permitida o involuntaria.</p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
 
                     <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>

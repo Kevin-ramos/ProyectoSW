@@ -14,6 +14,8 @@ export default function () {
         <Layout title={"PROTECCIÓN DE DATOS DE PRUEBA"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>PROTECCIÓN DE DATOS DE PRUEBA</h2>
+                <p>La política de Protección de Datos de Prueba tiene como objetivo proteger la información confidencial y sensible de la organización en los entornos de pruebas, utilizando datos no reales y garantizando su anonimización y seguridad.  </p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess} >
                         {Array.from({ length: numPages }, (_, index) => (

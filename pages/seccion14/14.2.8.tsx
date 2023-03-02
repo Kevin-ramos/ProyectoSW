@@ -14,6 +14,8 @@ export default function () {
         <Layout title={"PRUEBAS DE SEGURIDAD DEL SISTEMA"}>
             <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>PRUEBAS DE SEGURIDAD DEL SISTEMA</h2>
+                <p>Los requisitos para la seguridad de un sistema software deben ser probados como si se tratase de una funcionalidad más del software. Para ello debería implementarse un plan de pruebas documentado que nos ayudará a evaluar la seguridad de nuestro sistema</p>
+                <h3> Para complementar siga las guias dadas en la siguiente política:</h3>
                 <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                         {Array.from({ length: numPages }, (_, index) => (
