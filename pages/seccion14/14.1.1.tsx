@@ -12,10 +12,6 @@ export default function () {
     const titulo ="ANÁLISIS Y ESPECIFICACIÓN DE LOS REQUISITOS DE SEGURIDAD"
     const [file, setFile] = useState("/b.pdf");
     const [numPages, setNumPages] = useState(null);
-    function onFileChange(event) {
-        setFile(event.target.files[0]);
-    }
-
     function onDocumentLoadSuccess({ numPages: nextNumPages }) {
         setNumPages(nextNumPages);
     }
@@ -26,7 +22,7 @@ export default function () {
                 <div style={{ backgroundColor: "white", textAlign:"center"}}>
                     <h2>ANÁLISIS Y ESPECIFICACIÓN DE LOS REQUISITOS DE SEGURIDAD</h2>
                     <div>
-                        <div className="container">
+                        <div style={{display:"flex",justifyContent:"center",alignItems:"center", margin:"auto"}}>
                             <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
                                 {Array.from({ length: numPages }, (_, index) => (
                                     <Page

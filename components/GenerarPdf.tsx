@@ -36,7 +36,11 @@ export default function GeneratePDF({ recomendacion: recomendaciones, string:nor
     }
     return (
         <div>
-            <button className="btn btn-success" onClick={generate}>Descargar Reporte</button>
+
+            {recomendaciones.length > 0 &&
+                (            <button className="btn btn-success" onClick={generate}>Descargar Reporte</button>
+                )
+            }
         </div>
     )
 }

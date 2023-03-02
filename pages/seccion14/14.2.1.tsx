@@ -67,7 +67,7 @@ export default function () {
             const respuestaPreguntaCuatro = "Se recomienda además que, si estamos utilizando credenciales, estas contraseñas comunes sean prohibidas a los usuarios.";
             setPreguntas((respuestaAnterior)=>[...respuestaAnterior,respuestaPreguntaCuatro]);
         }else {
-            const respuestaPreguntaCuatro = "Existen listas de contraseñas comunes las cuales los atacantes pueden usar para vulnerar nuestro sistema, puede conoceralas aquí: \n" +
+            const respuestaPreguntaCuatro = "Existen listas de contraseñas comunes las cuales los atacantes pueden usar para vulnerar nuestro sistema, puede conocerlas aquí: \n" +
                 "SecLists/Passwords at master · danielmiessler/SecLists · GitHub\n" +
                 "Se recomienda además que, si estamos utilizando credenciales, estas contraseñas comunes sean prohibidas a los usuarios\n"
             setPreguntas((respuestaAnterior)=>[...respuestaAnterior,respuestaPreguntaCuatro]);
@@ -131,6 +131,7 @@ export default function () {
                                 <label htmlFor="primeraPregunta" className="form-label">
                                     1.	¿En la empresa se realiza entrenamiento periódico de los desarrolladores acerca de la seguridad?
                                 </label>
+                                <br/>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"
                                            name="primeraPregunta"
@@ -308,7 +309,7 @@ export default function () {
                                            {...register("septimaPregunta",{required: "Seleccione una opción"} )}
 
                                     />
-                                    <label className="form-check-label" htmlFor="no">En el Front-end  </label>
+                                    <label className="form-check-label" htmlFor="no">En el Back-end  </label>
                                 </div>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"

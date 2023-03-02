@@ -87,7 +87,7 @@ export default function () {
                         </div>
                         <form onSubmit={handleSubmit(responderPreguntas)} >
                             <div className="mb-3">
-                                <label htmlFor="primeraPregunta" className="form-label">¿Qué grado de sensibilidad tienen sus datos? Siendo 1 información publica y siendo 5 información sensible como financiera</label>
+                                <label htmlFor="primeraPregunta" className="form-label">  1. ¿Qué grado de sensibilidad tienen sus datos? Siendo 1 información publica y siendo 5 información sensible como financiera</label>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"
                                            name="primeraPregunta"
@@ -135,7 +135,7 @@ export default function () {
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="segundaPregunta" className="form-label">¿Qué confiabilidad tiene su personal? Siendo 1 nada confiable y siendo 5 totalmente confiable</label>
+                                <label htmlFor="segundaPregunta" className="form-label"> 2. ¿Qué confiabilidad tiene su personal? Siendo 1 nada confiable y siendo 5 totalmente confiable</label>
                                 <br/>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"
@@ -185,7 +185,7 @@ export default function () {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="terceraPregunta" className="form-label">
-                                    ¿Qué tan estricta es la licencia de su código? </label>
+                                     3. ¿Qué tan estricta es la licencia de su código? </label>
                                 <br/>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"
@@ -209,7 +209,7 @@ export default function () {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="cuartaPregunta" className="form-label">
-                                    ¿Tiene más de un sitio de desarrollo? </label>
+                                   4. ¿Tiene más de un sitio de desarrollo? </label>
                                 <br/>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"
@@ -233,7 +233,7 @@ export default function () {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="quintaPregunta" className="form-label">
-                                    ¿Genera respaldos de la información que utiliza? </label>
+                                    5. ¿Genera respaldos de la información que utiliza? </label>
                                 <br/>
                                 <div className="form-check form-check-inline">
                                     <input type="radio"
