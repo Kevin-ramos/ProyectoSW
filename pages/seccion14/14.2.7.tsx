@@ -2,8 +2,8 @@ import Layout from "../../components/Layout";
 
 export default function () {
     return (
-        <Layout>
-            <div style={{ backgroundColor: "black", verticalAlign:"middle", textAlign:"center", alignItems:"center", padding: "17%"}}>
+        <Layout title={"DESARROLLO SUBCONTRATADO"}>
+            <div style={{ backgroundColor: "white", textAlign:"center"}}>
                 <h2>DESARROLLO SUBCONTRATADO</h2>
             </div>
         </Layout>

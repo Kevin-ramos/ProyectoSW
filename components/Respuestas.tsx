@@ -7,8 +7,9 @@ export interface MensajeChatProps {
 export default function (respuesta :MensajeChatProps){
     const {mensaje} = respuesta;
     return (<>
-        {
+        {<div style={{textAlign:"justify"}}>
             <p> {mensaje}</p>
+        </div>
 
         }
     </>)
