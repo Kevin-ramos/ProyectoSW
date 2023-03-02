@@ -6,9 +6,9 @@ export default function () {
         <>
             <Layout title="ANÁLISIS Y ESPECIFICACIÓN DE LOS REQUISITOS DE SEGURIDAD">
 
-                <div style={{ backgroundColor: "black", textAlign:"center", padding: "17%"}}>
+                <div style={{ backgroundColor: "white", textAlign:"center"}}>
                     <h2>ANÁLISIS Y ESPECIFICACIÓN DE LOS REQUISITOS DE SEGURIDAD</h2>
-                    <GeneratePDF person="Hola" />
+
                 </div>
             </Layout>
 
