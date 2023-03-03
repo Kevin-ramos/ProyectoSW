@@ -77,8 +77,8 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
       {children}
     <footer>
-      <div style={{margin: "0px", backgroundColor:"black", color:"white", textAlign:"center"}} >
-          <h2> Desarrollo de Software Seguro : GRUPO 4</h2>
+      <div style={{margin: "0px", backgroundColor:"#3c515d", color:"white", textAlign:"center"}} >
+          <h2> Desarrollo de Software Seguro</h2>
       </div>
     </footer>
   </div>
