@@ -24,7 +24,8 @@
     "react-hook-form": "^7.43.2",
     "react-pdf": "^6.2.2",
     "react-pdf-js": "^5.1.0",
-    "react-pdf-viewer": "^0.1.0"
+    "react-pdf-viewer": "^0.1.0",
+    "react-player": "^2.11.2"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",

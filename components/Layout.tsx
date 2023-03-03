@@ -1,6 +1,9 @@
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import imagen from "../public/image.png"
+import Image from 'next/image';
+
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -22,25 +25,50 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
+    <header className="headerCustom"  style={{backgroundColor: 'red'}}>
       <nav style={{margin:"0px"}}>
           <Box sx={{ flexGrow: 1 }}>
               <AppBar position="static">
                   <Toolbar>
-                      <Button color="inherit"><Link href={"/"} style={{ textDecoration: 'none', color: "white" }}>Home</Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.1.1"} style={{ textDecoration: 'none', color: "white" }} > 14.1.1  </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.1.2"} style={{ textDecoration: 'none', color: "white" }} > 14.1.2  </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.1.3"} style={{ textDecoration: 'none', color: "white" }}> 14.1.3 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.1"} style={{ textDecoration: 'none', color: "white" }}> 14.2.1 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.2"} style={{ textDecoration: 'none', color: "white" }}> 14.2.2 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.3"} style={{ textDecoration: 'none', color: "white" }}> 14.2.3 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.4"} style={{ textDecoration: 'none', color: "white" }}> 14.2.4 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.5"} style={{ textDecoration: 'none', color: "white" }}> 14.2.5 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.6"} style={{ textDecoration: 'none', color: "white" }}> 14.2.6 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.7"} style={{ textDecoration: 'none', color: "white" }}> 14.2.7 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.8"} style={{ textDecoration: 'none', color: "white" }}> 14.2.8 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.2.9"} style={{ textDecoration: 'none', color: "white" }}> 14.2.9 </Link></Button>
-                      <Button color="inherit"><Link href={"/seccion14/14.3.1"} style={{ textDecoration: 'none', color: "white" }}> 14.3.1 </Link></Button>
+                      <Button color="inherit"><Link href={"/"} style={{ textDecoration: 'none', color: "white" }}>
+                          <Image
+                               src={imagen} width="30"
+                               alt="Inicio"/>
+                      </Link></Button>
+                      <div className="menu">
+                          <div className="menu-item">
+                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.1</a>
+                              <ul className="sub-menu">
+                                  <li> <Button color="inherit"><Link href={"/seccion14/14.1.1"} style={{ textDecoration: 'none', color: "black" }} > 14.1.1  </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.1.2"} style={{ textDecoration: 'none', color: "black" }} > 14.1.2  </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.1.3"} style={{ textDecoration: 'none', color: "black" }}> 14.1.3 </Link></Button></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div className="menu">
+                          <div className="menu-item">
+                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.2</a>
+                              <ul className="sub-menu">
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.1"} style={{ textDecoration: 'none', color: "black" }}> 14.2.1 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.2"} style={{ textDecoration: 'none', color: "black" }}> 14.2.2 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.3"} style={{ textDecoration: 'none', color: "black" }}> 14.2.3 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.4"} style={{ textDecoration: 'none', color: "black" }}> 14.2.4 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.5"} style={{ textDecoration: 'none', color: "black" }}> 14.2.5 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.6"} style={{ textDecoration: 'none', color: "black" }}> 14.2.6 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.7"} style={{ textDecoration: 'none', color: "black" }}> 14.2.7 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.8"} style={{ textDecoration: 'none', color: "black" }}> 14.2.8 </Link></Button></li>
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.9"} style={{ textDecoration: 'none', color: "black" }}> 14.2.9 </Link></Button></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div className="menu">
+                          <div className="menu-item">
+                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.3</a>
+                              <ul className="sub-menu">
+                                  <li><Button color="inherit"><Link href={"/seccion14/14.3.1"} style={{ textDecoration: 'none', color: "black" }}> 14.3.1 </Link></Button></li>
+                              </ul>
+                          </div>
+                      </div>
                   </Toolbar>
               </AppBar>
           </Box>
@@ -50,9 +78,8 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 
       {children}
     <footer>
-        <hr style={{margin:"0px"}}/>
       <div style={{margin: "0px", backgroundColor:"black", color:"white", textAlign:"center"}} >
-          <h2 style={{margin:"0px"}}> Desarrollo de Software Seguro : GRUPO 4</h2>
+          <h2> Desarrollo de Software Seguro : GRUPO 4</h2>
       </div>
     </footer>
   </div>
