@@ -9,7 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export default function () {
     return (
         <Layout title={"REVISIÓN TÉCNICA DE APLICACIONES DESPUÉS DE CAMBIOS DE LAS PLATAFORMAS OPERATIVAS"}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>REVISIÓN TÉCNICA DE APLICACIONES DESPUÉS DE CAMBIOS DE LAS PLATAFORMAS OPERATIVAS</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <p style={{width: "60%" , textAlign: "center"}}>Cuando se cambian las plataformas operativas, las aplicaciones críticas para el negocio se deberían

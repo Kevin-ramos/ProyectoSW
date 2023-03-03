@@ -37,35 +37,34 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
                       </Link></Button>
                       <div className="menu">
                           <div className="menu-item">
-                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.1</a>
+                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.1 Requerimientos de seguridad de S.I.</a>
                               <ul className="sub-menu">
-                                  <li> <Button color="inherit"><Link href={"/seccion14/14.1.1"} style={{ textDecoration: 'none', color: "black" }} > 14.1.1  </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.1.2"} style={{ textDecoration: 'none', color: "black" }} > 14.1.2  </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.1.3"} style={{ textDecoration: 'none', color: "black" }}> 14.1.3 </Link></Button></li>
+                                  <li> <Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.1.1"} style={{ textDecoration: 'none', color: "black" }} > 14.1.1  </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.1.2"} style={{ textDecoration: 'none', color: "black" }} > 14.1.2  </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.1.3"} style={{ textDecoration: 'none', color: "black" }}> 14.1.3 </Link></Button></li>
                               </ul>
                           </div>
                       </div>
                       <div className="menu">
                           <div className="menu-item">
-                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.2</a>
+                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.2 Seguridad en el proceso de D. y S.</a>
                               <ul className="sub-menu">
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.1"} style={{ textDecoration: 'none', color: "black" }}> 14.2.1 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.2"} style={{ textDecoration: 'none', color: "black" }}> 14.2.2 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.3"} style={{ textDecoration: 'none', color: "black" }}> 14.2.3 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.4"} style={{ textDecoration: 'none', color: "black" }}> 14.2.4 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.5"} style={{ textDecoration: 'none', color: "black" }}> 14.2.5 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.6"} style={{ textDecoration: 'none', color: "black" }}> 14.2.6 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.7"} style={{ textDecoration: 'none', color: "black" }}> 14.2.7 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.8"} style={{ textDecoration: 'none', color: "black" }}> 14.2.8 </Link></Button></li>
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.2.9"} style={{ textDecoration: 'none', color: "black" }}> 14.2.9 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.1"} style={{ textDecoration: 'none', color: "black" }}> 14.2.1 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.2"} style={{ textDecoration: 'none', color: "black" }}> 14.2.2 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.3"} style={{ textDecoration: 'none', color: "black" }}> 14.2.3 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.4"} style={{ textDecoration: 'none', color: "black" }}> 14.2.4 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.5"} style={{ textDecoration: 'none', color: "black" }}> 14.2.5 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.6"} style={{ textDecoration: 'none', color: "black" }}> 14.2.6 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.8"} style={{ textDecoration: 'none', color: "black" }}> 14.2.8 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.2.9"} style={{ textDecoration: 'none', color: "black" }}> 14.2.9 </Link></Button></li>
                               </ul>
                           </div>
                       </div>
                       <div className="menu">
                           <div className="menu-item">
-                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.3</a>
+                              <a href="#" style={{ textDecoration: 'none', color:"white"}}>14.3 Datos de prueba</a>
                               <ul className="sub-menu">
-                                  <li><Button color="inherit"><Link href={"/seccion14/14.3.1"} style={{ textDecoration: 'none', color: "black" }}> 14.3.1 </Link></Button></li>
+                                  <li><Button color="inherit" style={{width:"100%"}}><Link href={"/seccion14/14.3.1"} style={{ textDecoration: 'none', color: "black" }}> 14.3.1 </Link></Button></li>
                               </ul>
                           </div>
                       </div>

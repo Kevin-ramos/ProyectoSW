@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export default function () {
     return (
         <Layout title={"PRUEBAS DE SEGURIDAD DEL SISTEMA"}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>PRUEBAS DE SEGURIDAD DEL SISTEMA</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <p style={{width: "60%" , textAlign: "center"}}>Los requisitos para la seguridad de un sistema software deben ser probados como si se tratase de una

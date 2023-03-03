@@ -7,7 +7,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export default function () {
     return (
         <Layout title={"TRANSACCIONES EN LÍNEA"}>
-            <div style={{ backgroundColor: "white", textAlign:"center"}}>
+            <div className="white">
                 <h2>TRANSACCIONES EN LÍNEA</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <p style={{width: "60%" , textAlign: "center"}}>Se trata de controles que permitan garantizar la seguridad y la integridad de las transacciones en línea, mediante el uso de controles de seguridad adecuados.</p>

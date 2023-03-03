@@ -9,7 +9,7 @@ export default function () {
 
     return (
         <Layout title={"PRINCIPIOS DE LA INGENIERÍA DE SISTEMAS SEGUROS"}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>PRINCIPIOS DE LA INGENIERÍA DE SISTEMAS SEGUROS</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <p style={{width: "60%" , textAlign: "center"}}>Se deberían establecer, documentar, mantener y aplicar los principios para la ingeniería de sistemas

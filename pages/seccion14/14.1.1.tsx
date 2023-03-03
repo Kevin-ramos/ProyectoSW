@@ -21,7 +21,7 @@ export default function () {
         <>
             <Layout title={titulo}>
 
-                <div style={{backgroundColor: "white", textAlign: "center"}}>
+                <div className="white">
                     <h2>ANÁLISIS Y ESPECIFICACIÓN DE LOS REQUISITOS DE SEGURIDAD</h2>
                     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                         <p style={{width: "60%" , textAlign: "center"}}>
@@ -46,11 +46,11 @@ export default function () {
                                 Política de Análisis y Especificación de los Requisitos de Seguridad</Button>
                         </a>
                     </div>
-                    <div style={{margin: "3% 0% 0% 0%", padding: "25px"}}>
-                        <h1 style={{margin: "2%"}} >Video de demostración de la herramienta para modelado</h1>
-                        <video width="320" height="240" controls>
-                            <source src="../public/Demostración_de_Herramienta_para_modelamiento.mp4" type="video/mkv"/>
-                        </video>
+                    <div>
+                        <a href={"https://epnecuador-my.sharepoint.com/:f:/g/personal/marco_salazar02_epn_edu_ec/Eodmqpbl52ZGmU11pdHIJdsB3iPRCiAdLIy-pgLZqvXicQ?e=FrvqpK"}>
+                            <Button className="btn btn-success" style={{margin: "11% 0%", padding: "25px"}}>
+                                Video demostración STRIDE y anexos</Button>
+                        </a>
                     </div>
 
                 </div>

@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export default function () {
     return (
         <Layout title={"RESTRICCIONES A LOS CAMBIOS EN LOS PAQUETES DE SOFTWARE"}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>RESTRICCIONES A LOS CAMBIOS EN LOS PAQUETES DE SOFTWARE</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <p style={{width: "60%" , textAlign: "center"}}>Se deberían desalentar las modificaciones a los paquetes de software, limitándose a los cambios

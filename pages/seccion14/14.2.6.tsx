@@ -77,19 +77,22 @@ export default function () {
 
     return (
         <Layout title={titulo}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>AMBIENTE DE DESARROLLO SEGURO</h2>
-                <p>La evaluación de riesgos para la seguridad de la información no solo debe afectar a los activos de
+                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <p style={{width: "60%" , textAlign: "center"}}>
+                La evaluación de riesgos para la seguridad de la información no solo debe afectar a los activos de
                     información como software, datos o equipos y soportes sino que también debe aplicarse a los entornos
                     de desarrollo, las personas, los procesos de desarrollo y las tecnologías utiliza dadas para
                     determinar si es necesario aplicar medidas o controles de seguridad</p>
+                </div>
                 <div className="row">
                     <div className="col-sm-6" style={{textAlign: "left"}}>
                         <div style={{textAlign: "center"}}>
                             <h3>Cuestionario</h3>
                         </div>
                         <form onSubmit={handleSubmit(responderPreguntas)}>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="primeraPregunta" className="form-label"> 1. ¿Qué grado de sensibilidad
                                     tienen sus datos? Siendo 1 información publica y siendo 5 información sensible como
                                     financiera</label>
@@ -139,7 +142,7 @@ export default function () {
                                     <label className="form-check-label" htmlFor="1">1 </label>
                                 </div>
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="segundaPregunta" className="form-label"> 2. ¿Qué confiabilidad tiene su
                                     personal? Siendo 1 nada confiable y siendo 5 totalmente confiable</label>
                                 <br/>
@@ -189,7 +192,7 @@ export default function () {
                                     <label className="form-check-label" htmlFor="1">1 </label>
                                 </div>
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="terceraPregunta" className="form-label">
                                     3. ¿Qué tan estricta es la licencia de su código? </label>
                                 <br/>
@@ -214,7 +217,7 @@ export default function () {
                                 </div>
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="cuartaPregunta" className="form-label">
                                     4. ¿Tiene más de un sitio de desarrollo? </label>
                                 <br/>
@@ -238,7 +241,7 @@ export default function () {
                                 </div>
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="quintaPregunta" className="form-label">
                                     5. ¿Genera respaldos de la información que utiliza? </label>
                                 <br/>

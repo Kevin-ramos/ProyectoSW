@@ -1,33 +1,96 @@
+nav {
+    margin: 0px;
+}
+
 .menu {
+    display: inline-block;
     position: relative;
 }
 
-.menu-item {
-    display: inline-block;
-    margin-right: 10px;
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 100%;
 }
 
-.menu-item a{
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-.menu-item:hover .sub-menu {
-    display: block;
-}
-
-.sub-menu {
+.menu-item ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1;
-    padding: 5px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    list-style-type: none;
+    width: 100%; /* ajustado para que el submenú tenga el mismo ancho que el menú principal */
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.headerCustom {
-    background: red !important;
+.menu-item:hover > ul {
+    display: block;
+    width: 100%;
+}
+
+.sub-menu li a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.sub-menu li:hover {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.sub-menu li:hover a {
+    color: white;
+    width: 100%;
+}
+
+
+.mi-etiqueta {
+    margin: 2px;
+    background-color: #f4f4f4; /* color de fondo */
+    border: 1px solid #333333; /* borde */
+    border-radius: 8px; /* borde redondeado */
+    padding: 10px; /* espacio interno */
+    transition: all 0.3s ease-in-out; /* transición suave */
+    color: #333333; /* color del texto por defecto */
+    text-align: justify;
+}
+
+.mi-etiqueta:hover {
+    margin: 3px;
+    background-color: #cccccc; /* color de fondo en hover */
+    border: 1px solid #333333; /* borde en hover */
+    color: #333333; /* color del texto en hover */
+    text-align: justify;
+}
+.mi-etiqueta label {
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    margin-top: 80px;
+    /* 80px is the height of the fixed navigation bar */
+}
+.white{
+    background-color: white;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
 }

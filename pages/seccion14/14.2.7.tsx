@@ -4,7 +4,7 @@ import {Button} from "react-bootstrap";
 export default function () {
     return (
         <Layout title={"DESARROLLO SUBCONTRATADO"}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>DESARROLLO SUBCONTRATADO</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <p style={{width: "60%" , textAlign: "center"}}>Para la subcontratación de desarrollos de Software deberíamos tener en cuenta que la organización

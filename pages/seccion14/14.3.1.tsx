@@ -19,7 +19,7 @@ export default function () {
 
     return (
         <Layout title={"PROTECCIÓN DE DATOS DE PRUEBA"}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>PROTECCIÓN DE DATOS DE PRUEBA</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <p style={{width: "60%" , textAlign: "center"}}>La política de Protección de Datos de Prueba tiene como objetivo proteger la información confidencial

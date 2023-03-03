@@ -17,6 +17,7 @@ export interface Preguntas {
 }
 
 export default function () {
+
     const {control, register, handleSubmit, formState: {errors, isValid}} = useForm({
         defaultValues: {
             primeraPregunta: '',
@@ -111,9 +112,11 @@ export default function () {
 
     return (
         <Layout title={titulo}>
-            <div style={{backgroundColor: "white", textAlign: "center"}}>
+            <div className="white">
                 <h2>POLÍTICA DE DESARROLLO SEGURO</h2>
-                <p> Se deben establecer reglas para que la seguridad de la información sea tenida en cuenta en todo el
+                <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <p style={{width: "60%" , textAlign: "center"}}>
+                        Se deben establecer reglas para que la seguridad de la información sea tenida en cuenta en todo el
                     proceso de desarrollo del software y en todo el ciclo de vida del mismo. Estas reglas deben tener en
                     cuenta aspectos como:
                     La seguridad en entornos de desarrollo
@@ -123,13 +126,14 @@ export default function () {
                     Como se asegura los controles de seguridad en software subcontratado
                     Como se establecen requisitos de seguridad en la fase de definición de funcionalidades del software
                 </p>
+                </div>
                 <div className="row">
                     <div className="col-sm-6" style={{textAlign: "left"}}>
                         <div style={{textAlign: "center"}}>
                             <h3>Cuestionario</h3>
                         </div>
                         <form onSubmit={handleSubmit(responderPreguntas)}>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="primeraPregunta" className="form-label">
                                     1. ¿En la empresa se realiza entrenamiento periódico de los desarrolladores acerca
                                     de la seguridad?
@@ -154,7 +158,7 @@ export default function () {
                                     <label className="form-check-label" htmlFor="no">No </label>
                                 </div>
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="segundaPregunta" className="form-label">
                                     2. ¿Conoce las vulnerabilidades más recientes publicadas por el CVE acerca de
                                     software que utiliza? </label>
@@ -178,7 +182,7 @@ export default function () {
                                     <label className="form-check-label" htmlFor="no">No </label>
                                 </div>
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="terceraPregunta" className="form-label">
                                     3. ¿Cuándo se realiza la documentación del desarrollo? </label>
                                 <br/>
@@ -214,7 +218,7 @@ export default function () {
                                 </div>
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="cuartaPregunta" className="form-label">
                                     4. ¿Conoce las contraseñas más comunes y por qué no debería utilizarlas? </label>
                                 <br/>
@@ -238,7 +242,7 @@ export default function () {
                                 </div>
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="quintaPregunta" className="form-label">
                                     5. ¿Requiere dentro de sus sistema cifrado de datos? </label>
                                 <br/>
@@ -262,7 +266,7 @@ export default function () {
                                 </div>
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="sextaPregunta" className="form-label">
                                     6. ¿Hace cuánto fue la última vez que realizo auditoria? </label>
                                 <br/>
@@ -296,7 +300,7 @@ export default function () {
 
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="septimaPregunta" className="form-label">
                                     7. ¿Dónde se debería la validación de datos de entrada? </label>
                                 <br/>
@@ -329,7 +333,7 @@ export default function () {
                                 </div>
 
                             </div>
-                            <div className="mb-3">
+                            <div className="mi-etiqueta">
                                 <label htmlFor="quintaPregunta" className="form-label">
                                     8. Una vez establecidos los controles de seguridad en la fase de diseño ¿Pueden
                                     cambiar? </label>
@@ -355,6 +359,7 @@ export default function () {
                                 </div>
 
                             </div>
+
                             <div style={{textAlign: "center"}}>
                                 <button type="submit"
                                         disabled={!isValid}
