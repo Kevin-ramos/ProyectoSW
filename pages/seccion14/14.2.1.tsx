@@ -4,6 +4,7 @@ import {useForm} from "react-hook-form";
 import {useEffect, useState} from "react";
 import Respuestas from "../../components/Respuestas";
 import GeneratePDF from "../../components/GenerarPdf";
+import {padding} from "@mui/system";
 
 export interface Preguntas {
     primeraPregunta: string;
@@ -32,6 +33,7 @@ export default function () {
         mode: 'all'
     });
     const [preguntas, setPreguntas] = useState([]);
+    const [showButton, setShowButton] = useState(true);
     const titulo = "POLÍTICA DE DESARROLLO SEGURO"
 
     useEffect(() => {
@@ -107,6 +109,8 @@ export default function () {
             const respuestaPreguntaCinco = "Recuerde que evolucionar no significa que debamos crear todo desde cero, confíe en la experiencia de sus pares que llevaron a establecer esos controles en primer lugar y si se deben afinar, afinarlos. Nuestro propósito es hacer el mejor software posible y para ello necesitamos tanto experiencia como flexibilidad que nos llevaran a una mejor toma de decisiones.";
             setPreguntas((respuestaAnterior) => [...respuestaAnterior, respuestaPreguntaCinco]);
         }
+        setShowButton(false);
+
 
     }
 
@@ -115,24 +119,27 @@ export default function () {
             <div className="white">
                 <h2>POLÍTICA DE DESARROLLO SEGURO</h2>
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                    <p style={{width: "60%" , textAlign: "center"}}>
-                        Se deben establecer reglas para que la seguridad de la información sea tenida en cuenta en todo el
-                    proceso de desarrollo del software y en todo el ciclo de vida del mismo. Estas reglas deben tener en
-                    cuenta aspectos como:
-                    La seguridad en entornos de desarrollo
-                    La política determina la metodología que se aplica en el desarrollo del software
-                    Como se gestionan las distintas versiones de software
-                    Como se gestionan las vulnerabilidades del software
-                    Como se asegura los controles de seguridad en software subcontratado
-                    Como se establecen requisitos de seguridad en la fase de definición de funcionalidades del software
-                </p>
+                    <p style={{width: "60%", textAlign: "center"}}>
+                        Se deben establecer reglas para que la seguridad de la información sea tenida en cuenta en todo
+                        el
+                        proceso de desarrollo del software y en todo el ciclo de vida del mismo. Estas reglas deben
+                        tener en
+                        cuenta aspectos como:
+                        La seguridad en entornos de desarrollo
+                        La política determina la metodología que se aplica en el desarrollo del software
+                        Como se gestionan las distintas versiones de software
+                        Como se gestionan las vulnerabilidades del software
+                        Como se asegura los controles de seguridad en software subcontratado
+                        Como se establecen requisitos de seguridad en la fase de definición de funcionalidades del
+                        software
+                    </p>
                 </div>
                 <div className="row">
                     <div className="col-sm-6" style={{textAlign: "left"}}>
                         <div style={{textAlign: "center"}}>
                             <h3>Cuestionario</h3>
                         </div>
-                        <form onSubmit={handleSubmit(responderPreguntas)}>
+                        <form onSubmit={handleSubmit(responderPreguntas)} style={{padding: "30px"}}>
                             <div className="mi-etiqueta">
                                 <label htmlFor="primeraPregunta" className="form-label">
                                     1. ¿En la empresa se realiza entrenamiento periódico de los desarrolladores acerca
@@ -361,22 +368,27 @@ export default function () {
                             </div>
 
                             <div style={{textAlign: "center"}}>
-                                <button type="submit"
+                                {showButton && (
+                                    <button
+                                        type="submit"
                                         disabled={!isValid}
-                                        className="btn btn-success">
-                                    Generar reporte
-                                </button>
+                                        className="btn btn-success"
+                                    >
+                                        Generar reporte
+                                    </button>
+                                )}
                             </div>
 
 
                         </form>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6" style={{padding: "30px"}}>
                         <h3>Recomendaciones</h3>
                         {preguntas.map((pregunta: string, index) =>
                             <Respuestas key={index} mensaje={pregunta}/>
                         )}
                         <GeneratePDF recomendacion={preguntas} string={titulo}/>
+
                     </div>
 
                 </div>

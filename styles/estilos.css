@@ -37,7 +37,11 @@ nav {
     color: black;
     text-decoration: none;
     width: 100%;
+    list-style-type: none;
+}
 
+.sub-menu{
+    list-style-type: none;
 }
 
 .sub-menu li:hover {

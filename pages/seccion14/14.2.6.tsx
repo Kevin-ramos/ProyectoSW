@@ -91,7 +91,7 @@ export default function () {
                         <div style={{textAlign: "center"}}>
                             <h3>Cuestionario</h3>
                         </div>
-                        <form onSubmit={handleSubmit(responderPreguntas)}>
+                        <form onSubmit={handleSubmit(responderPreguntas)} style={{padding: "30px"}}>
                             <div className="mi-etiqueta">
                                 <label htmlFor="primeraPregunta" className="form-label"> 1. ¿Qué grado de sensibilidad
                                     tienen sus datos? Siendo 1 información publica y siendo 5 información sensible como
@@ -275,12 +275,13 @@ export default function () {
 
                         </form>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6" style={{padding: "30px"}}>
                         <h3>Recomendaciones</h3>
                         {preguntas.map((pregunta: string, index) =>
                             <Respuestas key={index} mensaje={pregunta}/>
                         )}
                         <GeneratePDF recomendacion={preguntas} string={titulo}/>
+
                     </div>
 
                 </div>

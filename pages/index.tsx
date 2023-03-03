@@ -12,8 +12,8 @@ const IndexPage = () => (
 
       <div style={{ backgroundColor: "black", verticalAlign:"middle", textAlign:"center", alignItems:"center", padding: "16.5%"}}>
           <div >
-              <h1 style={{color: "white", margin:"0px"}} > Sistema de Gestión de la Seguridad  de la Información: ISO 27002</h1>
-              <h4 style={{color: "white"}}> Basado en el control 14: Adquisición, desarrollo y mantenimiento de sistemas de información</h4>
+              <h1 style={{color: "white", margin:"0px"}} > Guía para el desarrollo de un Sistema de Gestión de la Seguridad  de la Información: ISO 27002</h1>
+              <h4 style={{color: "white"}}> Basado en la cláusula 14: Adquisición, desarrollo y mantenimiento de sistemas de información</h4>
               <Button variant="contained" style={{margin:"1px", width:"100px"}} >
                 <Link href="./seccion14/14.1.1" style={{textDecoration:"none", color:"white"}}> Empezar</Link>
               </Button >
